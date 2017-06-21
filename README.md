@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Writing a Counter Reducer with Tests
+## Redux: Store Methods: getState(), dispatch(), and subscribe()
 
-[Video Link](https://egghead.io/lessons/javascript-redux-writing-a-counter-reducer-with-tests)
+[Video Link](https://egghead.io/lessons/javascript-redux-store-methods-getstate-dispatch-and-subscribe)
