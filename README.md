@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Avoiding Object Mutations with Object.assign() and ...spread
+## Redux: Writing a Todo List Reducer (Adding a Todo)
 
-[Video Link](https://egghead.io/lessons/javascript-redux-avoiding-object-mutations-with-object-assign-and-spread)
+[Video Link](https://egghead.io/lessons/javascript-redux-writing-a-todo-list-reducer-adding-a-todo)
