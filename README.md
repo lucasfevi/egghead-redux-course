@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Reducer Composition with Arrays
+## Redux: Reducer Composition with Objects
 
-[Video Link](https://egghead.io/lessons/javascript-redux-reducer-composition-with-arrays)
+[Video Link](https://egghead.io/lessons/javascript-redux-reducer-composition-with-objects)
