@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Implementing Store from Scratch
+## Redux: React Counter Example
 
-[Video Link](https://egghead.io/lessons/javascript-redux-implementing-store-from-scratch)
+[Video Link](https://egghead.io/lessons/javascript-redux-react-counter-example)
