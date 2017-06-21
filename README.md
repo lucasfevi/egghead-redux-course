@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: React Counter Example
+## Redux: Avoiding Array Mutations with concat(), slice(), and ...spread
 
-[Video Link](https://egghead.io/lessons/javascript-redux-react-counter-example)
+[Video Link](https://egghead.io/lessons/javascript-redux-avoiding-array-mutations-with-concat-slice-and-spread)
