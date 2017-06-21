@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Implementing combineReducers() from Scratch
+## Redux: React Todo List Example (Adding a Todo)
 
-[Video Link](https://egghead.io/lessons/javascript-redux-implementing-combinereducers-from-scratch)
+[Video Link](https://egghead.io/lessons/javascript-redux-react-todo-list-example-adding-a-todo)
