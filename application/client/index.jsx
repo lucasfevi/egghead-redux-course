@@ -1,6 +1,19 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore } from 'redux';
 import todos from './reducer/todos';
 import visibilityFilter from './reducer/visibility-filter';
+
+const combineReducers = (reducers) => {
+  return (state = {}, action) => {
+    return Object.keys(reducers).reduce(
+      (nextState, key) => {
+        nextState[key] = reducers[key](state[key], action);
+
+        return nextState;
+      },
+      {}
+    );
+  };
+};
 
 const todoApp = combineReducers({
   todos,
