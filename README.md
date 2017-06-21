@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-[Course Link](https://egghead.io/courses/getting-started-with-redux)
+## Redux: Writing a Counter Reducer with Tests
 
-**Each video will have its own branch.** But some of them won't, mainly the first ones, since they are simple explanations and do not need coding.
+[Video Link](https://egghead.io/lessons/javascript-redux-writing-a-counter-reducer-with-tests)
