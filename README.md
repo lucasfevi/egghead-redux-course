@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Reducer Composition with Objects
+## Redux: Reducer Composition with combineReducers()
 
-[Video Link](https://egghead.io/lessons/javascript-redux-reducer-composition-with-objects)
+[Video Link](https://egghead.io/lessons/javascript-redux-reducer-composition-with-combinereducers)
