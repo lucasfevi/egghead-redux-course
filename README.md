@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: React Todo List Example (Filtering Todos)
+## Redux: Extracting Presentational Components (Todo, TodoList)
 
-[Video Link](https://egghead.io/lessons/javascript-redux-react-todo-list-example-filtering-todos)
+[Video Link](https://egghead.io/lessons/javascript-redux-extracting-presentational-components-todo-todolist)
