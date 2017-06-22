@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Passing the Store Down Explicitly via Props
+## Redux: Passing the Store Down Implicitly via Context
 
-[Video Link](https://egghead.io/lessons/javascript-redux-passing-the-store-down-explicitly-via-props)
+[Video Link](https://egghead.io/lessons/javascript-redux-passing-the-store-down-implicitly-via-context)
