@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import TodosReducer from './reducer/todos';
 import VisibilityFilterReducer from './reducer/visibility-filter';
@@ -160,21 +161,6 @@ const TodoApp = () => (
     <Footer />
   </div>
 );
-
-class Provider extends Component {
-  getChildContext() {
-    return {
-      store: this.props.store,
-    };
-  }
-
-  render() {
-    return this.props.children;
-  }
-}
-Provider.childContextTypes = {
-  store: React.PropTypes.object,
-};
 
 ReactDOM.render(
   <Provider store={createStore(todoApp)}>
