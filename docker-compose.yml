@@ -11,4 +11,3 @@ services:
       - 8080:8080
     volumes:
       - ./application:/home/node/application
-      - /home/node/application/node_modules
