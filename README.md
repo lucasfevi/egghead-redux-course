@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Generating Containers with connect() from React Redux (FooterLink)
+## Redux: Extracting Action Creators
 
-[Video Link](https://egghead.io/lessons/javascript-redux-generating-containers-with-connect-from-react-redux-footerlink)
+[Video Link](https://egghead.io/lessons/javascript-redux-extracting-action-creators)
