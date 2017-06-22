@@ -3,6 +3,17 @@ import { connect } from 'react-redux';
 
 let nextTodoId = 0;
 
+const addTodo = (text) => {
+  const id = nextTodoId;
+  nextTodoId += 1;
+
+  return {
+    type: 'ADD_TODO',
+    id,
+    text,
+  };
+};
+
 const AddTodo = ({ dispatch }) => {
   let input;
 
@@ -13,11 +24,7 @@ const AddTodo = ({ dispatch }) => {
       }}
       />
       <button onClick={() => {
-        dispatch({
-          type: 'ADD_TODO',
-          id: nextTodoId += 1,
-          text: input.value,
-        });
+        dispatch(addTodo(input.value));
         input.value = '';
       }}
       >

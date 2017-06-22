@@ -5,37 +5,13 @@ import { createStore, combineReducers } from 'redux';
 import TodosReducer from './reducer/todos';
 import VisibilityFilterReducer from './reducer/visibility-filter';
 import AddTodo from './component/add-todo';
-import FilterLink from './component/filter-link';
+import Footer from './component/footer';
 import VisibleTodoList from './component/visible-todo-list';
 
 const todoApp = combineReducers({
   todos: TodosReducer,
   visibilityFilter: VisibilityFilterReducer,
 });
-
-const Footer = () => (
-  <p>
-    Show:
-    {' '}
-    <FilterLink
-      filter="SHOW_ALL"
-    >
-      All
-    </FilterLink>
-    {' '}
-    <FilterLink
-      filter="SHOW_ACTIVE"
-    >
-      Active
-    </FilterLink>
-    {' '}
-    <FilterLink
-      filter="SHOW_COMPLETED"
-    >
-      Completed
-    </FilterLink>
-  </p>
-);
 
 const TodoApp = () => (
   <div>
