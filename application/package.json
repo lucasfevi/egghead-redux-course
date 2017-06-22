@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "lint": "eslint '**/*.js'",
-    "lint:fix": "eslint '**/*.js' --fix"
+    "lint": "eslint '**/*.js' '**/*.jsx'",
+    "lint:fix": "eslint '**/*.js' '**/*.jsx' --fix"
   }
 }
