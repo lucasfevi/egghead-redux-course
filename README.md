@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Extracting Presentational Components (AddTodo, Footer, FilterLink)
+## Redux: Redux: Extracting Container Components (FilterLink)
 
-[Video Link](https://egghead.io/lessons/javascript-redux-extracting-presentational-components-addtodo-footer-filterlink)
+[Video Link](https://egghead.io/lessons/javascript-redux-extracting-container-components-filterlink)
