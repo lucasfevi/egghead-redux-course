@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Passing the Store Down with <Provider> from React Redux
+## Redux: Generating Containers with connect() from React Redux (VisibleTodoList)
 
-[Video Link](https://egghead.io/lessons/javascript-redux-passing-the-store-down-with-provider-from-react-redux)
+[Video Link](https://egghead.io/lessons/javascript-redux-generating-containers-with-connect-from-react-redux-visibletodolist)
