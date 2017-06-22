@@ -1,5 +1,5 @@
 # egghead.io Redux Course
 
-## Redux: Passing the Store Down Implicitly via Context
+## Redux: Passing the Store Down with <Provider> from React Redux
 
-[Video Link](https://egghead.io/lessons/javascript-redux-passing-the-store-down-implicitly-via-context)
+[Video Link](https://egghead.io/lessons/javascript-redux-passing-the-store-down-with-provider-from-react-redux)
