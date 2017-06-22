@@ -3,5 +3,8 @@
   "globals": {
     "document": true,
     "it": true
+  },
+  "rules": {
+    "react/prop-types": [0, {}]
   }
 }

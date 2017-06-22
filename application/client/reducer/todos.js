@@ -1,17 +1,17 @@
-import todo from './todo';
+import TodoReducer from './todo';
 
-const todos = (state = [], action) => {
+const TodosReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_TODO':
       return [
         ...state,
-        todo(undefined, action),
+        TodoReducer(undefined, action),
       ];
     case 'TOGGLE_TODO':
-      return state.map(t => todo(t, action));
+      return state.map(t => TodoReducer(t, action));
     default:
       return state;
   }
 };
 
-export default todos;
+export default TodosReducer;

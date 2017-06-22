@@ -1,10 +1,14 @@
 import React from 'react';
 
 const Todo = ({ completed, text, onClick }) => (
-  <li onClick={onClick}
-    style={{ textDecoration: completed ? 'line-through' : 'none' }}
-  >
-    {text}
+  <li style={{ textDecoration: completed ? 'line-through' : 'none' }}>
+    <span
+      role="button"
+      tabIndex={0}
+      onClick={onClick}
+    >
+      {text}
+    </span>
   </li>
 );
 

@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, combineReducers } from 'redux';
-import todos from './reducer/todos';
-import visibilityFilter from './reducer/visibility-filter';
+import TodosReducer from './reducer/todos';
+import VisibilityFilterReducer from './reducer/visibility-filter';
 import TodoList from './component/presentational/todo-list';
 
 const todoApp = combineReducers({
-  todos,
-  visibilityFilter,
+  todos: TodosReducer,
+  visibilityFilter: VisibilityFilterReducer,
 });
+
+const store = createStore(todoApp);
 
 let nextTodoId = 0;
 
@@ -18,17 +20,17 @@ const FilterLink = ({ filter, currentFilter, children }) => {
   }
 
   return (
-    <a href='#'
-      onClick={e => {
+    <button
+      onClick={(e) => {
         e.preventDefault();
         store.dispatch({
           type: 'SET_VISIBILITY_FILTER',
-          filter
+          filter,
         });
       }}
     >
       {children}
-    </a>
+    </button>
   );
 };
 
@@ -40,6 +42,8 @@ const getVisibleTodos = (todos, filter) => {
       return todos.filter(t => t.completed);
     case 'SHOW_ACTIVE':
       return todos.filter(t => !t.completed);
+    default:
+      return todos;
   }
 };
 
@@ -50,17 +54,19 @@ class TodoApp extends Component {
 
     return (
       <div>
-        <input ref={node => {
+        <input ref={(node) => {
           this.input = node;
-        }} />
+        }}
+        />
         <button onClick={() => {
           store.dispatch({
             type: 'ADD_TODO',
             text: this.input.value,
-            id: nextTodoId++,
+            id: nextTodoId += 1,
           });
           this.input.value = '';
-        }}>
+        }}
+        >
           Add Todo
         </button>
         <TodoList
@@ -68,7 +74,7 @@ class TodoApp extends Component {
           onTodoClick={id =>
             store.dispatch({
               type: 'TOGGLE_TODO',
-              id
+              id,
             })
           }
         />
@@ -76,21 +82,21 @@ class TodoApp extends Component {
           Show:
           {' '}
           <FilterLink
-            filter='SHOW_ALL'
+            filter="SHOW_ALL"
             currentFilter={visibilityFilter}
           >
             All
           </FilterLink>
           {' '}
           <FilterLink
-            filter='SHOW_ACTIVE'
+            filter="SHOW_ACTIVE"
             currentFilter={visibilityFilter}
           >
             Active
           </FilterLink>
           {' '}
           <FilterLink
-            filter='SHOW_COMPLETED'
+            filter="SHOW_COMPLETED"
             currentFilter={visibilityFilter}
           >
             Completed
@@ -99,16 +105,14 @@ class TodoApp extends Component {
       </div>
     );
   }
-};
-
-const store = createStore(todoApp);
+}
 
 const render = () => {
   ReactDOM.render(
     <TodoApp
       {...store.getState()}
     />,
-    document.getElementById('root')
+    document.getElementById('root'),
   );
 };
 
